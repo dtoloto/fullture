@@ -2,13 +2,13 @@ const calcularIMC = (event) => {
   event.preventDefault();
   const inputPeso = document.querySelector('#peso');
   const inputAltura = document.querySelector('#altura');
+  const inputNome = document.querySelector('#nome');
 
   const resposta = document.querySelector('#resposta');
 
   const peso = inputPeso.value;
-  console.log(`Peso: ${peso}`);
   const altura = inputAltura.value;
-  console.log(`Altura: ${altura}`);
+  const nome = inputNome.value;
 
   inputPeso.classList.remove('error');
   inputAltura.classList.remove('error');
@@ -33,7 +33,15 @@ const calcularIMC = (event) => {
   }
 
   const imc = peso / (altura * altura);
-  console.log(`IMC: ${imc}`);
 
-  resposta.innerHTML = `O seu IMC é: ${imc.toFixed(2)}`;
+  resposta.innerHTML = `O seu IMC é: ${imc.toFixed(2)}kg/m²`;
+
+  const item = document.createElement('LI');
+  item.innerHTML = `${nome} - ${imc.toFixed(2)}kg/m²`;
+
+  const lista = document.querySelector('#lista');
+  lista.appendChild(item);
+
+  const form = document.querySelector('form');
+  form.reset();
 }

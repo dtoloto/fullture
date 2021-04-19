@@ -10,11 +10,14 @@
 </head>
 
 <body>
-
   <section>
+
     <div>
       <form onsubmit="calcularIMC(event)">
         <p>Cacule seu IMC</p>
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" placeholder="Informe seu nome" />
+
         <label for="peso">Peso</label>
         <input id="peso" type="number" placeholder="Informe seu peso" />
 
@@ -25,6 +28,12 @@
         <button type="submit">Calcular</button>
       </form>
     </div>
+
+    <div>
+      <p>Histórico de IMC</p>
+      <ul id="lista"></ul>
+    </div>
+
   </section>
 
   <script src="./scripts.js"></script>

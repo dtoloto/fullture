@@ -10,7 +10,7 @@ section{
   height: 100vh;
   background: linear-gradient(to right bottom, #2af598, #009efd);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -55,6 +55,19 @@ p{
   font-size: 1rem;
 }
 
+ul{
+  list-style: none;
+}
+
+li{
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+li:last-child{
+  border-bottom: 0;
+}
+
 .error{
   border: 1px solid #ff0000;
 }
@@ -62,3 +75,18 @@ p{
 .resposta-error{
   color: #ff0000;
 }
+
+
+@media screen and (max-width: 750px){
+  section{
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+  }
+
+  div:first-child{
+    margin-bottom: 1rem;
+  }
+}
+
+
