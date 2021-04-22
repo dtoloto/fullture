@@ -1,0 +1,27 @@
+:root{
+  --blue: #661EFF;
+  --red: #FF6767;
+  --dark-gray: #B0B0B0;
+  --light-gray: #D2D2D2;
+  --extra-light: #F4F4F4;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+  background-color: var(--blue);
+}
+
+header{
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
