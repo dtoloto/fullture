@@ -25,3 +25,35 @@ header{
   padding: 4rem 1rem;
 }
 
+button{
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: .2rem .5rem;
+  cursor: pointer;
+}
+
+input#new-task{
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  font-size: 1.5rem;
+  padding: .2rem .5rem;
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #fff;
+}
+
+
