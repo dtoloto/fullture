@@ -88,6 +88,7 @@ section{
   justify-content: space-between;
   align-items: center;
   color: var(--black);
+  animation: slideIn 1s linear;
 }
 
 .delete{
@@ -121,7 +122,22 @@ section{
 }
 
 @media screen and (max-width: 650px){
+  section{
+    padding: 2rem 1rem;
+  }
   .row{
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@keyframes slideIn{
+  from{
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateX(0);
   }
 }
